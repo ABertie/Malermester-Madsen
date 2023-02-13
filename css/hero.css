@@ -1,9 +1,13 @@
 .hero{
+    --color-bg: #ffffff;
+
     display: grid;
     grid-template-columns: 4fr 4rem 4rem 5fr;
     grid-template-rows: 3fr 1fr;
 
     height: 90vh;
+
+    background-color: var(--color-bg);
 }
 
 .hero img:first-of-type{

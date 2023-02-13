@@ -1,5 +1,6 @@
 @import url("header.css");
 @import url("hero.css");
+@import url("contact.css");
 
 :root{
     --color-brand: #ffc929;
@@ -26,10 +27,11 @@ img{
 body{
     --font: var(--font-base);
     --color-t: var(--color-dark);
-    --color-bg: var(--color-dark);
+    --color-bg: var(--color-mid);
 
     color: var(--color-t);
     font-family: var(--font);
+    background-color: var(--color-bg);
 }
 
 header{
@@ -101,4 +103,14 @@ img[src="img/logo.png"]{
 
     background-color: var(--color-dark);
     color: var(--color-t);  
+}
+
+.card{
+    --color-bg: var(--color-light);
+
+    background-color: var(--color-bg);
+}
+
+.padding{
+    padding: 6vw max(1.5rem, 10vw);
 }

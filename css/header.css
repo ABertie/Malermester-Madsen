@@ -1,4 +1,6 @@
 header {
+    --color-bg: var(--color-light);
+
     position: relative;
     z-index: 1;
 
@@ -9,7 +11,7 @@ header {
 
     width: 100%;
 
-    background-color: var(--color-light);
+    background-color: var(--color-bg);
     box-shadow: 0 5px 10px 3px rgba(60, 60, 60, 0.1);
 }
 

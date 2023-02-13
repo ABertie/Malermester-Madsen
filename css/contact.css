@@ -1,0 +1,11 @@
+.contack.padding{
+    padding-top: 0;
+}
+
+.contack{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
