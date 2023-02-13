@@ -34,13 +34,6 @@ body{
     background-color: var(--color-bg);
 }
 
-header{
-    --font: var(--font-accent);
-    
-    color: var(--color-t);
-    font-family: var(--font);
-}
-
 h2, h3, h4{
     --font: var(--font-accent);
     

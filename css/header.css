@@ -1,6 +1,10 @@
 header {
+    --font: var(--font-accent);
     --color-bg: var(--color-light);
 
+    color: var(--color-t);
+    font-family: var(--font);
+    
     position: relative;
     z-index: 1;
 

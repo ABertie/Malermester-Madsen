@@ -1,11 +1,37 @@
-.contack.padding{
+.padding.contact{
     padding-top: 0;
 }
 
-.contack{
+.contact{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: 100%;
 }
 
+.contact label{
+    font-weight: bold;
+}
+
+.contact input{
+    border: 0;
+    border-radius: 3px;
+    height: 2rem;
+}
+
+@media (max-width:1000px){
+    .contact{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contact input{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .contact input:last-of-type{
+        margin-top: 1rem;
+    }
+}
