@@ -1,0 +1,73 @@
+:root{
+    --color-brand: #ffc929;
+    --color-dark: #155e75;
+    --color-mid: #e5e7eb;
+    --color-light: #f8fafc;
+
+    --font-base: 'Synonym', sans-serif;
+    --font-accent: 'Amulya', sans-serif;
+}
+
+/* fjern når færdig */
+img{
+    width: 10em;
+}
+/**/
+
+body{
+    --font: var(--font-base);
+    --color-t: var(--color-dark);
+
+    color: var(--color-t);
+    font-family: var(--font);
+}
+
+header{
+    --font: var(--font-accent);
+    
+    color: var(--color-t);
+    font-family: var(--font);
+}
+
+h2, h3, h4{
+    --font: var(--font-accent);
+    
+    color: var(--color-t);
+    font-family: var(--font);
+}
+
+h3{
+    --color-t: var(--color-brand);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-t);
+}
+
+a:hover{
+    --color-t: var(--color-brand);
+}
+
+.button{
+    --color-t: var(--color-light);
+    background-color: var(--color-brand);
+
+    color: var(--color-t);
+    border: none;
+    text-decoration: none;
+
+    padding: .5em 2em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: var(--color-dark);
+}
+
+img[src="img/logo.png"]{
+    width: 100px;
+}
+
+@import url(header.css);

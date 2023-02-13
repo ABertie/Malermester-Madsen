@@ -7,9 +7,10 @@
     <title>Malermester Madsen</title>
 
     <!--internel css links-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--css links-->
+    <link href="https://api.fontshare.com/v2/css?f[]=amulya@400&f[]=synonym@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -22,13 +23,13 @@
             </span>
             <input type="checkbox" id="burger">
             <ul>
-                <li><a href="#hjem">hjem</a></li>
+                <li><a href="#hjem">Hjem</a></li>
                 <li><a href="#få-tilbud">Få tilbud</a></li>
                 <li><a href="#priser">Priser</a></li>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
-            <button><a href="#få-et-tilbud">Få et tilbud</a></button>
+            <a href="#få-et-tilbud" class="button">Få et tilbud</a>
         </nav>
     </header>
     <div id="hjem" class="hero">
@@ -41,14 +42,14 @@
             <img src="img/waves.png" alt="">
         </section>
     </div>
-    <form id="konkakt" class="contact">
+    <form id="konkakt" class="contact dark-theme">
         <label for="navn">Navn</label>
         <input type="text" name="" id="navn">
         <label for="telfon">Telefon</label>
         <input type="tel" name="" id="telfon">
         <label for="email">Email</label>
         <input type="email" name="" id="email">
-        <input type="submit" value="Send">
+        <input type="submit" value="Send" class="button">
     </form>
     <div id="priser" class="cards">
         <div class="card">
@@ -88,7 +89,7 @@
             <p>Alle priser er mindstepris pr.time</p>
         </div>
     </div>
-    <section id="produkter" class="light-theme">
+    <section id="produkter" class="block-card">
         <h2>100% bæredygtigt</h2>
         <p>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet. Etiam varius risus eu risus lobortis. Praesent elit lorem, mollis vel purus convallis, vehicula venenatis purus. Etiam non pretium magna.</p>
         <h3>Få et tilbud allerede i dag</h3>
@@ -99,7 +100,7 @@
             <li>Maling af  gulv</li>
         </ul>
     </section>
-    <secton class="dark-theme">
+    <secton class="block-card dark-theme">
         <h2>Hvide vægge starter her</h2>
         <p>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet. Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</p>
         <h3>Ring</h3>
@@ -107,7 +108,7 @@
     </secton>
     <div class="cards">
         <div class="card">
-            <h3>John doe - køge</h3>
+            <h4>John doe - køge</h4>
             <ul>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
@@ -122,7 +123,7 @@
             </span>        
         </div>
         <div class="card">
-            <h3>John doe - køge</h3>
+            <h4>John doe - køge</h4>
             <ul>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
@@ -137,7 +138,7 @@
             </span>   
         </div>
         <div class="card">
-            <h3>John doe - køge</h3>
+            <h4>John doe - køge</h4>
             <ul>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
                 <li>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet.</li>
@@ -156,7 +157,7 @@
         <section>
             <ul>
                 <li><img src="img/logo.png" alt=""></li>
-                <li><h3>Åbningstider</h3></li>
+                <li><h4>Åbningstider</h4></li>
                 <li>Man-lør:08.00 - 16.00</li>
                 <li>Søn: Lukket</li>
                 <li>
@@ -169,7 +170,7 @@
         </section>
         <section>
             <ul>
-                <li><h3>Produkter</h3></li>
+                <li><h4>Produkter</h4></li>
                 <li>Maling af loft</li>
                 <li>MAling af vægge</li>
                 <li>Pudsning af vægge</li>
@@ -178,7 +179,7 @@
         </section>
         <section>
             <ul>
-                <li><h3>Kontakt os</h3></li>
+                <li><h4>Kontakt os</h4></li>
                 <li>Adressevej 67</li>
                 <li>0000 Enby, Danmark</li>
                 <li>+45 0000 0000</li>
@@ -186,7 +187,7 @@
             </ul>
         </section>
         <section>
-            <h3>Kvalitet</h3>
+            <h4>Kvalitet</h4>
             <p>Integer quis ultrices nisl. Suspendisse vestibulum lacus massa, sit amet egestas urna convallis sit amet</p>
         </section>
     </footer>
