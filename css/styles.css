@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("hero.css");
 @import url("contact.css");
+@import url("cards.css");
 
 :root{
     --color-brand: #ffc929;
