@@ -19,13 +19,14 @@
 
 /* fjern når færdig */
 img{
-    width: 10em;
+    width: 100%;
 }
 /**/
 
 body{
     --font: var(--font-base);
     --color-t: var(--color-dark);
+    --color-bg: var(--color-dark);
 
     color: var(--color-t);
     font-family: var(--font);
@@ -47,6 +48,7 @@ h2, h3, h4{
 
 h3{
     --color-t: var(--color-brand);
+    text-transform: uppercase;
 }
 
 a{
@@ -87,4 +89,12 @@ img[src="img/logo.png"]{
     display: flex;
     align-items: center;
     width: 100px;
+}
+
+.dark-theme{
+    --color-bg: var(--color-dark);
+    --color-t: var(--color-light);
+
+    background-color: var(--color-dark);
+    color: var(--color-t);
 }
