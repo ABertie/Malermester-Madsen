@@ -46,6 +46,10 @@ h2, h3, h4{
     font-family: var(--font);
 }
 
+h2{
+    font-size: 2.3rem;
+}
+
 h3{
     --color-t: var(--color-brand);
     text-transform: uppercase;
@@ -96,5 +100,5 @@ img[src="img/logo.png"]{
     --color-t: var(--color-light);
 
     background-color: var(--color-dark);
-    color: var(--color-t);
+    color: var(--color-t);  
 }

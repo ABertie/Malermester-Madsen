@@ -1,25 +1,115 @@
 .hero{
     display: grid;
-    grid-template-columns: 4fr 5rem 5rem 4fr;
+    grid-template-columns: 4fr 4rem 4rem 5fr;
     grid-template-rows: 3fr 1fr;
+
+    height: 90vh;
 }
 
 .hero img:first-of-type{
     grid-column: 1/3;
-    grid-row: 1/3;;
+    grid-row: 1/3;
+
+    object-fit: cover;
+    object-position: 0 30%;
+    width: 100%;
+    height: 100%;
 }
 
 .hero .experience{
     grid-column: 2/4;
     grid-row: 1/2;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 7rem;
+    height: 7rem;
+    padding: 1rem;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.hero .experience span{
+    font-size: xx-large;
 }
 
 .hero section{
     grid-column: 3/5;
     grid-row: 1/3;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 5rem 3.5rem 0 7rem;
+    
+    text-align: center;
+}
+
+.hero section p{
+    padding: 3rem 1rem 0;
 }
 
 .hero img:last-of-type{
     grid-column: 1/5;
     grid-row: 2/3;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1000px) {
+    .hero img:first-of-type{
+        position: relative;
+        z-index: -1;
+
+        grid-column: 1/5;
+        grid-row: 1/3;
+
+        object-position: 0 20%;
+        opacity: 0.5;
+    }
+
+    .hero .experience{
+        display: none;
+    }
+
+    .hero section{
+        justify-content: center;
+
+        grid-column: 1/5;
+        grid-row: 1/3;
+
+        padding: 15vh 20%;
+    }
+}
+
+@media (max-width:850px){
+    .hero img:first-of-type{
+        object-position: 0 0;
+    }
+}
+
+@media (max-width:500px){
+    .hero {
+        height: 70vh;
+    }
+
+    .hero section{
+        padding: 20vh 2%;
+    }
+}
+
+@media (max-width:400px){
+    .hero section{
+        padding: 30vh 0;
+    }
+
+    .hero section p{
+        display: none;
+    }
 }
