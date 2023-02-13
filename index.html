@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!--css links-->
-    <link href="https://api.fontshare.com/v2/css?f[]=amulya@400&f[]=synonym@400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=amulya@700,400&f[]=synonym@600,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="">
-        <nav>
-            <span class="material-symbols-outlined">
-                menu
-            </span>
+    <header> 
+        
+        <nav><a href="/"><img src="img/logo.png" alt=""></a>
+            <label for="burger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </label>    
             <input type="checkbox" id="burger">
             <ul>
                 <li><a href="#hjem">Hjem</a></li>
@@ -28,8 +30,9 @@
                 <li><a href="#priser">Priser</a></li>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#få-et-tilbud" class="button">Få et tilbud</a></li>
             </ul>
-            <a href="#få-et-tilbud" class="button">Få et tilbud</a>
+            
         </nav>
     </header>
     <div id="hjem" class="hero">
@@ -156,7 +159,7 @@
     <footer>
         <section>
             <ul>
-                <li><img src="img/logo.png" alt=""></li>
+                <li><a href="/"><img src="img/logo.png" alt=""></a></li>
                 <li><h4>Åbningstider</h4></li>
                 <li>Man-lør:08.00 - 16.00</li>
                 <li>Søn: Lukket</li>

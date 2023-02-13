@@ -1,3 +1,6 @@
+@import url("header.css");
+@import url("hero.css");
+
 :root{
     --color-brand: #ffc929;
     --color-dark: #155e75;
@@ -6,6 +9,12 @@
 
     --font-base: 'Synonym', sans-serif;
     --font-accent: 'Amulya', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* fjern når færdig */
@@ -49,25 +58,33 @@ a:hover{
     --color-t: var(--color-brand);
 }
 
+li{
+    list-style-type: none;
+}
+
 .button{
     --color-t: var(--color-light);
-    background-color: var(--color-brand);
+    --color-bg: var(--color-brand);
+
+    background-color: var(--color-bg);
 
     color: var(--color-t);
     border: none;
     text-decoration: none;
 
     padding: .5em 2em;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: bold;
+
 }
 
 .button:hover{
-    background-color: var(--color-dark);
+    --color-t: var(--color-light);
+    --color-bg: var(--color-dark);
 }
 
 img[src="img/logo.png"]{
+    display: flex;
+    align-items: center;
     width: 100px;
 }
-
-@import url(header.css);
