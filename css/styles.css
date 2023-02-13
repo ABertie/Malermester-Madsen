@@ -74,10 +74,11 @@ li{
     border: none;
     text-decoration: none;
 
-    padding: .5em 2em;
+    padding: .5rem 2rem;
     border-radius: 3px;
+    
     font-weight: bold;
-
+    font-size: 1rem;
 }
 
 .button:hover{
@@ -96,15 +97,11 @@ img[src="img/logo.png"]{
     --color-t: var(--color-light);
 
     background-color: var(--color-dark);
-    color: var(--color-t);  
-}
+    color: var(--color-t);
 
-.card{
-    --color-bg: var(--color-light);
-
-    background-color: var(--color-bg);
+     
 }
 
 .padding{
-    padding: 6vw max(1.5rem, 10vw);
+    padding: 6vw max(8vw, .5rem);
 }

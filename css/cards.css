@@ -1,5 +1,89 @@
+.card{
+    --color-bg: var(--color-light);
+
+    background-color: var(--color-bg);
+    
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 3px rgb(60, 60, 60, 0.1);
+    width: 100%;
+
+    text-align: center;
+}
+
 .cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+/* Prices */
+.prices .card ul{
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.prices .card p{
+    font-size: small;
+}
+
+.prices .card p:first-of-type{
+    text-transform: uppercase;
+}
+
+.prices .card p:last-of-type{
+    font-style: italic;
+}
+
+.prices .card h2, .prices .card p:last-of-type{
+    text-align: end;
+}
+
+/* Block Card */
+.block-card{
+    border-radius: 0;
+}
+
+.block-card h2{
+    font-size: clamp(1.3rem, 6vw, 3rem);
+}
+
+.block-card h3{
+    padding-bottom: 1rem;
+}
+
+.block-card p{
+    padding: 1.5rem 0;
+}
+
+.block-card a{
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: lighter;
+}
+
+/* Evaluation  */
+.evaluation .card h4, .evaluation .card ul{
+    text-align: start;
+}
+
+.evaluation .card ul li{
+    font-size: small;
+    padding: .5rem 0;
+}
+
+.card span{
+    --color-t: var(--color-brand);
+
+    padding-top: 1rem;
+
+    color: var(--color-t);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .cards{
+        flex-wrap: wrap;
+    }
 }

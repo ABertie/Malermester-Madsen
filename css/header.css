@@ -66,10 +66,10 @@ header nav ul li{
     }
 
     #burger:checked ~ ul li{
-        padding: 1em 2em;
+        padding: 1rem 2rem;
     }
 
     #burger:checked ~ ul li:last-of-type{
-        padding: 1em 0;
+        padding: 1rem 0;
     }
 }
