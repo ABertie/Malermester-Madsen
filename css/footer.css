@@ -1,0 +1,37 @@
+footer{
+    display: flex;
+    align-items: baseline;
+
+    padding: 0 3rem 3rem;
+    width: 100%;
+}
+
+footer section{
+    width: 25%;
+}
+
+footer section h4{
+    padding: 0 0 1rem;
+} 
+
+footer section i{
+    padding: 1rem 0;
+}
+
+@media (max-width:850px){
+    footer{
+        flex-wrap: wrap;
+        align-content: space-between;
+        row-gap: 3rem;
+    }
+
+    footer section{
+        width: 50%;
+    }
+}
+
+@media (max-width:850px){
+    footer section{
+        width: 100%;
+    }
+}
