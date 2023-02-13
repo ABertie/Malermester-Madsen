@@ -3,13 +3,16 @@
 
     background-color: var(--color-bg);
     
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: 3px;
     box-shadow: 0 0 10px 3px rgb(60, 60, 60, 0.1);
     width: 100%;
 
     text-align: center;
 }
+
+.card h3{
+    font-size: clamp(1rem, 4vw, 1.7rem);}
 
 .cards{
     display: flex;
@@ -64,6 +67,7 @@
 /* Evaluation  */
 .evaluation .card h4, .evaluation .card ul{
     text-align: start;
+    font-size: large;
 }
 
 .evaluation .card ul li{
