@@ -12,7 +12,8 @@
 }
 
 .card h3{
-    font-size: clamp(1rem, 4vw, 1.7rem);}
+    font-size: clamp(1rem, 4vw, 1.7rem);
+}
 
 .cards{
     display: flex;
