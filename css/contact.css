@@ -10,8 +10,13 @@
     width: 100%;
 }
 
+.contact div{
+    width: 100%;
+}
+
 .contact label{
     font-weight: bold;
+    padding-right: 1rem;
 }
 
 .contact input{
