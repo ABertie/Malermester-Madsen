@@ -89,6 +89,7 @@ img[src="img/logo.png"]{
     display: flex;
     align-items: center;
     width: 100px;
+    background-image: radial-gradient(var(--color-mid) 40%, var(--color-mid) 10%, var(--color-bg) 70%, var(--color-bg) 100%);
 }
 
 .dark-theme{

@@ -43,35 +43,34 @@ header nav input{
         right: 0;
         z-index: 5;
 
+        display: block;
+
         width: 50px;
         height: 50px;
         padding: 2rem;
         opacity: 0;
     }
 
-    header nav .hamburger{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
+    header nav .burger{
+        position: relative;
+        top: 0;
+        right: 0;
         z-index: 4;
 
         widows: 3rem;
         height: 3rem;
         padding: 1rem;
-        background-color: var(--color-bg);
 
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    /* hamburger line */
-
-    header nav .hamburger > div{
+    header nav .burger > div{
         position: relative;
 
-        width: 35px;
-        height: 3px;
+        width: 36px;
+        height: 4px;
         background-color: var(--color-t);
 
         display: flex;
@@ -81,40 +80,39 @@ header nav input{
         transition: all 0.4s ease;
     }
 
-    header nav .hamburger > div::before,
-    header nav .hamburger > div::after{
+    header nav .burger > div::before,
+    header nav .burger > div::after{
         content: '';
 
         position: absolute;
-        z-index: 4;
-        top: -10px;
+        top: 12px;
 
-        width: 100%;
-        height: 3px;
+        width: inherit;
+        height: inherit;
         background: inherit;
     }
 
-    header nav .hamburger > div::after{
-        top: 10px;
+    header nav .burger > div::after{
+        top: -12px;
     }
 
-    header nav input:checked + .hamburger >div{
+    header nav input:checked + .burger >div{
         transform: rotate(135deg);
     }
 
-    /* laver til x */
-    header nav input:checked + .hamburger >div::before, 
-    header nav input:checked + .hamburger >div::after {
+    header nav input:checked + .burger >div::before, 
+    header nav input:checked + .burger >div::after {
         top: 0;
         transform: rotate(90deg);
     }
 
-    /* vis menu */
     header nav input:checked ~ ul{
         visibility: visible;
     }
 
     header nav ul {
+        --color-bg: var(--color-mid);
+
         position: absolute;
         top: 0;
         right: 0;
@@ -130,6 +128,6 @@ header nav input{
         display: flex;
         flex-direction: column;
         gap: min(1.5rem, 5vh);
-    } 
+    }
 }
 
