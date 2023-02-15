@@ -20,11 +20,9 @@
     box-sizing: border-box;
 }
 
-/* fjern når færdig */
-img{
-    width: 100%;
+html{
+    scroll-behavior: smooth;
 }
-/**/
 
 body{
     --font: var(--font-base);
