@@ -25,6 +25,10 @@
     height: 2rem;
 }
 
+.contact .button{
+    border: 1px solid var(--color-brand);
+}
+
 @media (max-width:1000px){
     .contact{
         flex-wrap: wrap;
